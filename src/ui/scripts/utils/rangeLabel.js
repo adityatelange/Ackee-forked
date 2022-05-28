@@ -6,5 +6,6 @@ export default (range) => {
 		[ranges.RANGES_LAST_7_DAYS]: 'Last 7 days',
 		[ranges.RANGES_LAST_30_DAYS]: 'Last 30 days',
 		[ranges.RANGES_LAST_6_MONTHS]: 'Last 6 months',
+		[ranges.RANGES_LAST_1_YEAR]: 'Last 1 year',
 	})[range]
 }

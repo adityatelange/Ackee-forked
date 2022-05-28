@@ -52,5 +52,9 @@ module.exports = gql`
 		Data of the last 6 months.
 		"""
 		LAST_6_MONTHS
+		"""
+		Data of the last 1 year.
+		"""
+		LAST_1_YEAR
 	}
 `
