@@ -75,9 +75,7 @@ const Dashboard = (props) => {
 		createDropdownButton('Events', '/insights/events', props.route, props.setRoute, 'e'),
 		createDropdownSeparator(),
 		createDropdownButton('Systems', '/insights/systems', props.route, props.setRoute),
-		createDropdownButton('Devices', '/insights/devices', props.route, props.setRoute),
 		createDropdownButton('Browsers', '/insights/browsers', props.route, props.setRoute),
-		createDropdownButton('Sizes', '/insights/sizes', props.route, props.setRoute),
 		createDropdownButton('Languages', '/insights/languages', props.route, props.setRoute),
 	]
 
