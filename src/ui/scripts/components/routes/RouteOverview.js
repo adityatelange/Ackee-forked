@@ -139,23 +139,6 @@ const RouteOverview = (props) => {
 				},
 			}),
 			h(CardStatistics, {
-				headline: 'Devices',
-				onMore: () => props.setRoute('/insights/devices'),
-				hook: useMergedDevices,
-				hookArgs: [
-					{
-						sorting: SORTINGS_TOP,
-						type: DEVICES_TYPE_WITH_MODEL,
-						range: RANGES_LAST_24_HOURS,
-					},
-				],
-				renderer: RendererList,
-				rendererProps: {
-					sorting: SORTINGS_TOP,
-					range: RANGES_LAST_24_HOURS,
-				},
-			}),
-			h(CardStatistics, {
 				headline: 'Browsers',
 				onMore: () => props.setRoute('/insights/browsers'),
 				hook: useMergedBrowsers,
@@ -163,23 +146,6 @@ const RouteOverview = (props) => {
 					{
 						sorting: SORTINGS_TOP,
 						type: BROWSERS_TYPE_WITH_VERSION,
-						range: RANGES_LAST_24_HOURS,
-					},
-				],
-				renderer: RendererList,
-				rendererProps: {
-					sorting: SORTINGS_TOP,
-					range: RANGES_LAST_24_HOURS,
-				},
-			}),
-			h(CardStatistics, {
-				headline: 'Sizes',
-				onMore: () => props.setRoute('/insights/sizes'),
-				hook: useMergedSizes,
-				hookArgs: [
-					{
-						sorting: SORTINGS_TOP,
-						type: SIZES_TYPE_BROWSER_RESOLUTION,
 						range: RANGES_LAST_24_HOURS,
 					},
 				],

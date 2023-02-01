@@ -137,24 +137,6 @@ const RouteDomain = (props) => {
 				},
 			}),
 			h(CardStatistics, {
-				headline: 'Devices',
-				onMore: () => props.setRoute('/insights/devices'),
-				hook: useDevices,
-				hookArgs: [
-					domainId,
-					{
-						sorting: SORTINGS_TOP,
-						type: DEVICES_TYPE_WITH_MODEL,
-						range: RANGES_LAST_24_HOURS,
-					},
-				],
-				renderer: RendererList,
-				rendererProps: {
-					sorting: SORTINGS_TOP,
-					range: RANGES_LAST_24_HOURS,
-				},
-			}),
-			h(CardStatistics, {
 				headline: 'Browsers',
 				onMore: () => props.setRoute('/insights/browsers'),
 				hook: useBrowsers,
@@ -163,24 +145,6 @@ const RouteDomain = (props) => {
 					{
 						sorting: SORTINGS_TOP,
 						type: BROWSERS_TYPE_WITH_VERSION,
-						range: RANGES_LAST_24_HOURS,
-					},
-				],
-				renderer: RendererList,
-				rendererProps: {
-					sorting: SORTINGS_TOP,
-					range: RANGES_LAST_24_HOURS,
-				},
-			}),
-			h(CardStatistics, {
-				headline: 'Sizes',
-				onMore: () => props.setRoute('/insights/sizes'),
-				hook: useSizes,
-				hookArgs: [
-					domainId,
-					{
-						sorting: SORTINGS_TOP,
-						type: SIZES_TYPE_BROWSER_RESOLUTION,
 						range: RANGES_LAST_24_HOURS,
 					},
 				],
