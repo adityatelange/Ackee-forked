@@ -45,17 +45,6 @@ const OverlayFailure = (props) => {
 			),
 			h('div', { className: 'card__footer' },
 
-				h('a', {
-					className: 'card__button link',
-					href: homepage,
-					target: '_blank',
-					rel: 'noopener',
-				}, 'Help'),
-
-				h('div', {
-					className: 'card__separator',
-				}),
-
 				h('button', {
 					className: 'card__button card__button--primary link color-white',
 					onClick,
